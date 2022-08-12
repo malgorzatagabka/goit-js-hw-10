@@ -31,6 +31,7 @@ function onSearchedCountry(event) {
       if (country.length > 10) {
         Notiflix.Notify.info(
           'Too many matches found. Please enter a more specific name.');
+        clearAtrributes();
         return;
       } else if (country.length === 1) {
         clearAtrributes(countryList.innerHTML);
